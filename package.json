@@ -19,6 +19,7 @@
   "homepage": "https://github.com/borisBoris17/local-social-api#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mongodb": "^3.6.2",
     "pg": "^8.3.3",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5"
