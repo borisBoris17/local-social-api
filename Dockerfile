@@ -8,8 +8,8 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY . /usr/src/app
+COPY . .
 
 EXPOSE 8000
 
-CMD ["npm", "start"]
+CMD ["node", "app.js"]

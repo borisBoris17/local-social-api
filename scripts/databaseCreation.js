@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017";
+var url = "mongodb://mongo:27017";
 
 MongoClient.connect(url, function (err, db) {
   if (err) throw err;
@@ -7,7 +7,7 @@ MongoClient.connect(url, function (err, db) {
   var localSocialDB = db.db("local-social-db");
 
   let albumCollectionToDrop = localSocialDB.collection('album');
-  albumCollectionToDrop.drop();
+  // albumCollectionToDrop.drop();
   let albumCollection = localSocialDB.collection('album');
   if (albumCollection) {
     insertIntoAlbum(albumCollection);
